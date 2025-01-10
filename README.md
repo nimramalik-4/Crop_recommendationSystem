@@ -41,7 +41,7 @@ The project uses a crop dataset containing the following features:
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/crop-recommendation-system.git
+   git clone https://github.com/nimramalik-4/crop-recommendation-system.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -73,24 +73,10 @@ The project uses a crop dataset containing the following features:
 **Output:**  
 - **Recommended Crop**: Rice 🌾
 
----
-
-## Screenshots
-![App Interface](path/to/screenshot.png)
-
----
-
 ## Future Enhancements
 - Add support for more crop varieties and regions.
 - Integrate additional environmental factors such as soil type.
 - Develop a mobile-friendly version.
-
----
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
 
 ## Author
 **Nimra**  
