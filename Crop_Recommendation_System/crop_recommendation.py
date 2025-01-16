@@ -98,14 +98,3 @@ if st.button("🚜 **Recommend Crop**"):
     recommended_crop = model.predict(input_features)[0]
     st.success(f"🌱 **Recommended Crop**: **{recommended_crop}** 🎉")
     st.balloons()
-
-# Download Recommendations
-st.subheader("💾 **Download Your Recommendation**")
-if st.button("📥 Download CSV"):
-    recommendation_df = pd.DataFrame({
-        'Nitrogen (N)': [N], 'Phosphorus (P)': [P], 'Potassium (K)': [K],
-        'Temperature': [temperature], 'Humidity': [humidity],
-        'pH': [ph], 'Rainfall': [rainfall], 'Recommended Crop': [recommended_crop]
-    })
-    csv = recommendation_df.to_csv(index=False).encode()
-    st.download_button("Download CSV", csv, "crop_recommendation.csv", "text/csv", key='download-csv')
